@@ -6,7 +6,7 @@ function sendEmail(subject, message) {
   Subject : subject,
   Body : message,
   }).then(
-  	message => alert(message)
+  	message => console.log(message)
   );
 }
 
