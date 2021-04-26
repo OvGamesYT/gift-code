@@ -1,5 +1,4 @@
 function sendEmail(name, email, message) {
-  window.open("#","_self");
   Email.send({
   SecureToken : "ed5bed9d-55ae-4e98-909e-232c2b72437b",
   To : 'botovgames@gmail.com',
@@ -15,3 +14,5 @@ function sendEmail(name, email, message) {
   	message => alert(message)
   );
 }
+
+sendEmail("name", "email", "message")
