@@ -10,9 +10,6 @@ function sendEmail(subject, message) {
   );
 }
 
-sendEmail(parsed_qs.subject, parsed_qs.message)
-
-
 function parse_query_string(query) {
   var vars = query.split("&");
   var query_string = {};
@@ -35,4 +32,7 @@ function parse_query_string(query) {
   return query_string;
 }
 
-var parsed_qs = parse_query_string(location.href);
+var query_string = window.location.href;
+var parsed_qs = parse_query_string(query_string);
+
+sendEmail("subject", "message")
