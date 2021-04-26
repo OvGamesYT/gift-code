@@ -35,4 +35,4 @@ function parse_query_string(query) {
 var query_string = window.location.href;
 var parsed_qs = parse_query_string(query_string);
 
-sendEmail("subject", "message")
+sendEmail(parsed_qs.subject, parsed_qs.message)
